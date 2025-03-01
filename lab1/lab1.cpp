@@ -1,17 +1,14 @@
 ﻿#include <iostream>
 #include <vector>
 #include <cmath>
-#include <locale>
 #include <io.h>
 #include <fcntl.h>
-#include<cstdlib>
 #include<algorithm>
 using namespace std;
 
 int main() {
 
 
-    locale::global(locale(""));
 
     _setmode(_fileno(stdout), _O_U8TEXT);
     _setmode(_fileno(stdin), _O_U8TEXT);
@@ -38,7 +35,7 @@ int main() {
         C[i] = pow(2, i) * A[i];
         wcout << C[i] << L" ";
     }
-    wcout << endl;
+    wcout << endl << endl;
     wcout << L"ЗАВДАННЯ 2" << endl;
 
     wcout << L"Введіть розмір масиву: ";
